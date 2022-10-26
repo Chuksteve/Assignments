@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="login-section">
+        <form action="success.html">
+          <fieldset>
+            <legend>Hello! Please enter your login details.</legend>
+
+            <label for="email">Email: </label
+            ><input
+              type="email"
+              id="email"
+              size="30"
+              placeholder="chuks@zuri.com"
+              required />
+            <label for="pwd">Password:</label>
+            <input
+              type="password"
+              id="pwd"
+              name="pwd"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+              title="Password must contain at least one number, one upper case and lower case letter, and have a length of 8 to 12"
+              autocomplete="off"
+              required />
+            <button type="submit" class="btn">Submit</button>
+            <!-- <input type="submit" value="submit" /> -->
+            <p>Don't have an account? <a href="index.html">Register</a></p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
